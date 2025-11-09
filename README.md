@@ -57,3 +57,9 @@
 > Nah — I’ll pass. Give me a **mug of hot chocolate** and a terminal window any day 🍫💻.
 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/CourtneyBritney/CourtneyBritney/output/snake.svg" alt="Snake animation" />
+</p>
+
+
+
