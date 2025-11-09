@@ -64,33 +64,4 @@
 
 ---
 
-<details>
-<summary>🐍 Contribution Snake Animation</summary>
 
-> Add this workflow to `.github/workflows/snake.yml` to generate your animated contribution snake automatically:
-
-```yaml
-name: Generate Snake
-on:
-  schedule: [{ cron: "0 */12 * * *" }]
-  workflow_dispatch:
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: CourtneyBritney
-          outputs: |
-            dist/snake.svg
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/CourtneyBritney/CourtneyBritney/output/snake.svg" alt="Snake animation" />
-</p>
